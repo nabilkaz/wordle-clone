@@ -23,3 +23,7 @@ export function checkGuess(guess, answer) {
     };
   });
 }
+
+export function isGuessCorrect(guess){
+  return guess.every(letter => letter.status === 'correct')
+}
